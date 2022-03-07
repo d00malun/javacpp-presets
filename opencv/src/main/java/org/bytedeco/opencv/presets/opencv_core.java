@@ -104,6 +104,10 @@ public class opencv_core implements LoadEnabled, InfoMapper {
                 preloads.add(i++, lib);
             }
         }
+        String zlib = "zlibwapi";
+        if (platform.startsWith("windows") && !preloads.contains(zlib)) {
+            preloads.add(i++, zlib);
+        }
         if (i > 0) {
             resources.add("/org/bytedeco/cuda/");
         }
