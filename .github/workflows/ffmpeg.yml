@@ -24,94 +24,94 @@ jobs:
 #      matrix:
 #        ext: ["", -gpl]
 #    steps:
-#      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@actions
+#      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@ffmpeg-vulkan-filters
   android-arm64:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
         ext: ["", -gpl]
     steps:
-      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@actions
+      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@ffmpeg-vulkan-filters
 #  android-x86:
 #    runs-on: ubuntu-22.04
 #    strategy:
 #      matrix:
 #        ext: ["", -gpl]
 #    steps:
-#      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@actions
+#      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@ffmpeg-vulkan-filters
   android-x86_64:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
         ext: ["", -gpl]
     steps:
-      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@actions
+      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@ffmpeg-vulkan-filters
 #  linux-armhf:
 #    runs-on: ubuntu-22.04
 #    strategy:
 #      matrix:
 #        ext: ["", -gpl]
 #    steps:
-#      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@actions
+#      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@ffmpeg-vulkan-filters
   linux-arm64:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
         ext: ["", -gpl]
     steps:
-      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@actions
+      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@ffmpeg-vulkan-filters
 #  linux-ppc64le:
 #    runs-on: ubuntu-22.04
 #    strategy:
 #      matrix:
 #        ext: ["", -gpl]
 #    steps:
-#      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@actions
+#      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@ffmpeg-vulkan-filters
 #  linux-x86:
 #    runs-on: ubuntu-22.04
 #    strategy:
 #      matrix:
 #        ext: ["", -gpl]
 #    steps:
-#      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@actions
+#      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@ffmpeg-vulkan-filters
   linux-x86_64:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
         ext: ["", -gpl]
     steps:
-      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@actions
+      - uses: d00malun/javacpp-presets/.github/actions/deploy-ubuntu@ffmpeg-vulkan-filters
   macosx-arm64:
     runs-on: macos-13
     strategy:
       matrix:
         ext: ["", -gpl]
     steps:
-      - uses: d00malun/javacpp-presets/.github/actions/deploy-macosx@actions
+      - uses: d00malun/javacpp-presets/.github/actions/deploy-macosx@ffmpeg-vulkan-filters
   macosx-x86_64:
     runs-on: macos-13
     strategy:
       matrix:
         ext: ["", -gpl]
     steps:
-      - uses: d00malun/javacpp-presets/.github/actions/deploy-macosx@actions
+      - uses: d00malun/javacpp-presets/.github/actions/deploy-macosx@ffmpeg-vulkan-filters
 #  windows-x86:
 #    runs-on: windows-2022
 #    strategy:
 #      matrix:
 #        ext: ["", -gpl]
 #    steps:
-#      - uses: d00malun/javacpp-presets/.github/actions/deploy-windows@actions
+#      - uses: d00malun/javacpp-presets/.github/actions/deploy-windows@ffmpeg-vulkan-filters
   windows-x86_64:
     runs-on: windows-2022
     strategy:
       matrix:
         ext: ["", -gpl]
     steps:
-      - uses: d00malun/javacpp-presets/.github/actions/deploy-windows@actions
+      - uses: d00malun/javacpp-presets/.github/actions/deploy-windows@ffmpeg-vulkan-filters
   redeploy:
 #    needs: [android-arm, android-arm64, android-x86, android-x86_64, linux-armhf, linux-arm64, linux-ppc64le, linux-x86, linux-x86_64, macosx-arm64, macosx-x86_64, windows-x86, windows-x86_64]
     needs: [android-arm64, android-x86_64, linux-arm64, linux-x86_64, macosx-arm64, macosx-x86_64, windows-x86_64]
     runs-on: ubuntu-22.04
     steps:
-      - uses: d00malun/javacpp-presets/.github/actions/redeploy@actions
+      - uses: d00malun/javacpp-presets/.github/actions/redeploy@ffmpeg-vulkan-filters
